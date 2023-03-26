@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sadowska.compose_wordle.ui.theme.BackgroundGray
 import com.sadowska.compose_wordle.ui.theme.ComposewordleTheme
 
 @Composable
@@ -25,7 +26,7 @@ fun Keyboard() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, backgroundColor = 0xFF121213)
 @Composable
 fun KeyboardPreview() {
     ComposewordleTheme {
@@ -38,15 +39,3 @@ private val allKeys = listOf(
         listOf("A", "S", "D", "F", "G", "H", "J", "K", "L"),
         listOf("ENTER", "Z", "X", "C", "V", "B", "N", "M", "«")
 )
-
-/*
-
-.key-container button:nth-child(11) {
-  margin-left: 30px;
-}
-
-.key-container button:nth-child(20),
-.key-container button:nth-child(28) {
-  width: 68px;
-}
- */

@@ -26,7 +26,7 @@ fun Header() {
         ) {
             Text(
                     color = Color.White,
-                    text = "Wordle",
+                    text = "Wordle".uppercase(),
                     style = MaterialTheme.typography.h4
             )
         }
